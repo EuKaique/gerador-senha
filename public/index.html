@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gerador de Senha</title>
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Gerador de Senha</h1>
+      <div class="gerador">
+        <input
+          type="text"
+          name="length-input"
+          id="length-input"
+          maxlength="2"
+        />
+        <p class="info">Digite acima o tamanho da senha (O mínimo é 4 e o máximo é 20)</p>
+        <ul>
+          <li>
+            <input type="checkbox" name="letters-min" id="letters-min" />Letras
+            minúsculas
+          </li>
+          <li>
+            <input type="checkbox" name="letters-max" id="letters-max" />Letras
+            maísculas
+          </li>
+          <li><input type="checkbox" name="numbers" id="numbers" />Números</li>
+          <li><input type="checkbox" name="symbols" id="symbols" />Símbolos</li>
+        </ul>
+      </div>
+      <div class="senha-gerada">
+        <div>
+          <button id="btn-novo">Gerar Senha</button>
+          <button id="btn-copiar">Copiar Senha</button>
+        </div>
+        <div id="senha"></div>
+      </div>
+    </section>
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>
